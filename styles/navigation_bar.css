@@ -1,12 +1,11 @@
 #nav-bar{
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 
     padding-right: 3em;
@@ -15,9 +14,20 @@
     padding-bottom: 1em;
 }
 
-.middle-nav{
+#left-nav{
     display: flex;
-    margin-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-favicon{
+    height: auto;
+    max-width: 30px;
+    object-fit: cover;
+}
+
+#right-nav{
+    display: flex;
     margin-left: 2em;
 }
 
@@ -26,8 +36,8 @@
     color: #b0cdf1;
     font-weight: 600;
     font-size: 12px;
-    margin-left: 1.75em;
-    margin-right: 1.75em;
+    margin-left: 2em;
+    margin-right: 2em;
     transition-duration: 300ms;
 }
 .nav-link-text:hover{
@@ -49,9 +59,10 @@
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     appearance: none;
     padding: 0.5em 1em 0.5em 1em;
+    margin-left: 2em;
     transition-duration: 150ms;
 
-    animation: button-load 700ms ease-in-out;
+    animation: button-load 750ms ease-in;
 }
 #hire-me-button:focus{
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
