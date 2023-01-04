@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(10, 25, 47);
+}
+
+p{
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
