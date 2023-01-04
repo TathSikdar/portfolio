@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 #nav-bar{
-    /* background-color: rgb(25, 25, 25);
-    background-color: rgb(99, 99, 99); */
 
     position: fixed;
     top: 0;
@@ -9,17 +6,13 @@
     right: 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
 
     padding-right: 3em;
     padding-left: 3em;
-
-    /* box-shadow: 0px 2px 5px black; */
-}
-
-.left-nav{
-
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .middle-nav{
@@ -28,26 +21,27 @@
     margin-left: 2em;
 }
 
-.right-nav{
-
-}
-
-#text-logo{
-    
-}
-
 .nav-link-text{
-    margin-left: 0.75em;
-    margin-right: 0.75em;
+    font-family: 'Glegoo', serif;
+    color: #b0cdf1;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
+    transition-duration: 300ms;
+}
+.nav-link-text:hover{
+    color: #7f86d2;
+    cursor: pointer;
 }
 
-#contact-button{
+#hire-me-button{
     background-color: #FCFCFD;
     color: #36395A;
 
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 
     align-items: center;
     border-radius: 4px;
@@ -55,17 +49,42 @@
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     appearance: none;
     padding: 0.5em 1em 0.5em 1em;
-    transition-duration: 300ms;
+    transition-duration: 150ms;
+
+    animation: button-load 700ms ease-in-out;
 }
-#contact-button:focus{
+#hire-me-button:focus{
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
-#contact-button:hover {
+#hire-me-button:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
+    cursor: pointer;
   }
   
-#contact-button:active {
+#hire-me-button:active{
     box-shadow: #9595a1 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+@keyframes nav-load{
+    0%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button-load{
+    0%{
+        opacity: 0;
+        transform: translateY(-250%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }

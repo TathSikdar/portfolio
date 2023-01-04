@@ -1,9 +1,12 @@
-body{
-    background-color: rgb(10, 25, 47);
-}
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Montserrat:wght@500;600&display=swap');
 
 p{
     color: white;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+body{
+    padding-top: 2em;
+    background-color: rgb(10, 25, 47);
 }
