@@ -1,0 +1,104 @@
+@media (hover:hover){
+    #nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    #left-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nav-favicon{
+        height: auto;
+        max-width: 30px;
+        object-fit: cover;
+    }
+    
+    #right-nav{
+        display: flex;
+        margin-left: 2em;
+    }
+    
+    .nav-link-text{
+        font-family: 'Glegoo', serif;
+        color: #b0cdf1;
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        transition-duration: 300ms;
+        padding-top: 5px;
+    }
+    .nav-link-text:hover{
+        color: #7f86d2;
+        cursor: pointer;
+    }
+    
+    #hire-me-button{
+        background-color: #FCFCFD;
+        color: #36395A;
+    
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+    
+        align-items: center;
+        border-radius: 4px;
+        border: none;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        appearance: none;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-left: 2em;
+        transition-duration: 150ms;
+    
+        animation: button-load 750ms ease-in;
+    }
+    #hire-me-button:focus{
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+    #hire-me-button:hover{
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        cursor: pointer;
+      }
+      
+    #hire-me-button:active{
+        box-shadow: #9595a1 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+    
+    @keyframes nav-load{
+        0%{
+            opacity: 0;
+            transform: translateY(-200%);
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes button-load{
+        0%{
+            opacity: 0;
+            transform: translateY(-250%);
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0);
+        }
+    }
+}

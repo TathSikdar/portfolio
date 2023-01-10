@@ -1,0 +1,53 @@
+@media (any-pointer: coarse){
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #introduction-text{
+        background-color: #0a1930;
+        box-shadow: 0 3px 5px black;
+        display: flex;
+        flex-direction: column;
+        padding: 4em;
+        margin: 2%;
+    }
+
+    #introduction-preamble{
+        color: #b0b0b0;
+        font-family: 'Glegoo', serif;
+        font-size: 13px;
+    }
+
+    #introduction-name{
+        font-weight: 600;
+        color: #abc7eb;
+        font-size: 60px;
+    }
+
+    #introduction-description{
+        color: #b0b0b0;
+        font-size: 18px;
+    }
+
+    #introduction-picture{
+        margin: 2%;
+    }
+
+    #portrait{
+        background-color: #0a1930;
+        height: auto;
+        width: 100%;
+        min-width: 200px;
+        max-width: 400px;
+        object-fit: contain;
+        border-radius: 50%;
+        border-width: 2px;
+        border-color: #b0b0b0;
+        border-style: solid;
+    }
+}
+}
