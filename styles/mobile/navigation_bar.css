@@ -9,10 +9,10 @@
         justify-content: center;
         align-items: center;
     
-        padding-right: 3em;
-        padding-left: 3em;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding-right: 0.75%;
+        padding-left: 0.75%;
+        padding-top: 1%;
+        padding-bottom: 5%;
     }
     
     #left-nav{
@@ -25,18 +25,19 @@
     
     #right-nav{
         display: flex;
-        margin-left:3em;
     }
     
     .nav-link-text{
         font-family: 'Glegoo', serif;
         color: #b0cdf1;
         font-weight: 600;
-        font-size: 16px;
-        margin-left: 3em;
+        font-size: 150%;
+        margin-left: 0em;
         margin-right: 3em;
         transition-duration: 300ms;
         padding-top: 5px;
+        background-color: transparent;
+        border: none
     }
     .nav-link-text:hover{
         color: #7f86d2;
@@ -49,15 +50,14 @@
     
         font-family: Montserrat, Arial, Helvetica, sans-serif;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 170%;
     
         align-items: center;
         border-radius: 4px;
         border: none;
         box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
         appearance: none;
-        padding: 0.5em 1em 0.5em 1em;
-        margin-left: 2em;
+        padding: 0.5em 1em 0.5em;
         transition-duration: 150ms;
     
         animation: button-load 750ms ease-in;

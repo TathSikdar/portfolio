@@ -2,8 +2,8 @@
     #nav-bar{
         position: fixed;
         top: 0;
-        left: 0;
         right: 0;
+        left: 0;
     
         display: flex;
         justify-content: space-between;
@@ -13,6 +13,26 @@
         padding-left: 3em;
         padding-top: 1em;
         padding-bottom: 1em;
+
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        overflow: hidden;
+    }
+
+    #nav-bar:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 80em) {
+        #nav-bar{
+            margin-left: 4%;
+            margin-right: 4%;
+        }
     }
     
     #left-nav{
@@ -41,6 +61,7 @@
         margin-right: 1.5em;
         transition-duration: 300ms;
         padding-top: 5px;
+        
     }
     .nav-link-text:hover{
         color: #7f86d2;

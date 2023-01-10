@@ -1,12 +1,12 @@
 @media (hover:hover) {
-    .card{
+    .cards{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     @media (max-width: 800px) {
-        .card{
+        .cards{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,7 +20,8 @@
         display: flex;
         flex-direction: column;
         padding: 4em;
-        margin: 2%;
+        margin: 0 2%;
+        max-width: 35em;
     }
 
     #introduction-preamble{
@@ -31,17 +32,34 @@
 
     #introduction-name{
         font-weight: 600;
-        color: #abc7eb;
+        color: #c5c5c5;
         font-size: 60px;
     }
 
-    #introduction-description{
+    #introduction-major{
         color: #b0b0b0;
         font-size: 18px;
     }
 
+    #introduction-description{
+        margin-top: 2em;
+        color: #d4d4d4;
+        font-size: 13px;
+    }
+
     #introduction-picture{
-        margin: 2%;
+        margin: 0 2%;
+    }
+
+    @media (max-width: 800px) {
+        #introduction-text{
+            margin-bottom: 2% 0;
+            padding: 4em 3.5em;
+        }
+        
+        #introduction-picture{
+            margin: 2% 0;
+        }
     }
 
     #portrait{

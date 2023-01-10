@@ -1,6 +1,6 @@
 @media (any-pointer: coarse){
 
-    .card{
+    .cards{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,23 +14,26 @@
         flex-direction: column;
         padding: 4em;
         margin: 2%;
+        width: 85%;
+        max-width: 95%;
     }
 
     #introduction-preamble{
         color: #b0b0b0;
         font-family: 'Glegoo', serif;
-        font-size: 13px;
+        font-size: 160%;
     }
 
     #introduction-name{
         font-weight: 600;
         color: #abc7eb;
-        font-size: 60px;
+        font-size: 600%;
+        margin-bottom: 2%;
     }
 
-    #introduction-description{
+    #introduction-major{
         color: #b0b0b0;
-        font-size: 18px;
+        font-size: 180%;
     }
 
     #introduction-picture{
@@ -39,15 +42,12 @@
 
     #portrait{
         background-color: #0a1930;
-        height: auto;
         width: 100%;
-        min-width: 200px;
-        max-width: 400px;
         object-fit: contain;
         border-radius: 50%;
         border-width: 2px;
         border-color: #b0b0b0;
         border-style: solid;
     }
-}
+
 }
