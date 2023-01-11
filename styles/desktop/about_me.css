@@ -1,12 +1,12 @@
 @media (hover:hover) {
-    .cards{
+    #about-me{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    @media (max-width: 800px) {
-        .cards{
+    @media (max-width: 66em) {
+        #about-me{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,54 +20,49 @@
         display: flex;
         flex-direction: column;
         padding: 4em;
-        margin: 0 2%;
+        margin: 2%;
         max-width: 35em;
+        flex-shrink: 2.3;
+        border-radius: 1em;
     }
 
     #introduction-preamble{
-        color: #b0b0b0;
-        font-family: 'Glegoo', serif;
+        color: #bbbbbb;
         font-size: 13px;
     }
 
     #introduction-name{
         font-weight: 600;
-        color: #c5c5c5;
+        color: #b0cdf1;
         font-size: 60px;
     }
 
     #introduction-major{
-        color: #b0b0b0;
+        color: #bbbbbb;
         font-size: 18px;
     }
 
     #introduction-description{
         margin-top: 2em;
-        color: #d4d4d4;
+        color: #c0d0e2;
         font-size: 13px;
     }
 
     #introduction-picture{
         margin: 0 2%;
+        flex-shrink: 1;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 52em) {
         #introduction-text{
-            margin-bottom: 2% 0;
             padding: 4em 3.5em;
-        }
-        
-        #introduction-picture{
-            margin: 2% 0;
         }
     }
 
     #portrait{
         background-color: #0a1930;
         height: auto;
-        width: 100%;
-        min-width: 200px;
-        max-width: 400px;
+        width: 350px;
         object-fit: contain;
         border-radius: 50%;
         border-width: 2px;

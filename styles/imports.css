@@ -3,7 +3,9 @@
 @import url(general.css);
 
 @import url(desktop/about_me.css);
-@import url(desktop/navigation_bar.css);
+@import url(desktop/nav_bar.css);
+@import url(desktop/skills.css);
 
 @import url(mobile/about_me.css);
-@import url(mobile/navigation_bar.css);
+@import url(mobile/nav_bar.css);
+@import url(desktop/skills.css);

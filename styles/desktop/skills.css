@@ -1,0 +1,7 @@
+#skills{
+    color: #b0cdf1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

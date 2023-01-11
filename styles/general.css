@@ -13,6 +13,10 @@ body{
     background-color: #081426;
 }
 
+.cards-container{
+    grid-template-columns: 1fr;
+}
+
 .no-select {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
