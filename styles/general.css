@@ -1,3 +1,12 @@
+body{
+    padding: 5em 4em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+    background-color: #081426;
+    height: 10000px;
+}   
+
 p{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -5,23 +14,43 @@ p{
     margin: 0;
 }
 
-body{
-    padding: 5em 3em 2em 3em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80em;
-    background-color: #081426;
-}
-
 .cards-container{
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
 }
 
-.no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-    }
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-text{
+    font-weight: 600;
+    color: #b0cdf1;
+    font-size: 60px;
+}
+
+.title-underline{
+    background-color: #ca6609;
+    height: 4px;
+    width: 7em;
+    border-radius: 4px;
+}
+
+.header-one{
+    color: #bbbbbb;
+    font-size: 18px;
+}
+
+.normal-text{
+    color: #c0d0e2;
+    font-size: 13px;
+}
+
+.card{
+    background-color: #0a1930;
+    box-shadow: 0 3px 5px black;
+    border-radius: 1em;
+}

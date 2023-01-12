@@ -13,31 +13,29 @@
                 <img src="images/favicon.png" id="nav-favicon">
             </div>
             <div id="right-nav">
-                <p class="nav-link-text" class="no-select" style="animation: nav-load 300ms ease-in;">Skills</p>
-                <p class="nav-link-text" class="no-select" style="animation: nav-load 400ms ease-in;">Experience</p>
-                <p class="nav-link-text" class="no-select" style="animation: nav-load 500ms ease-in;">Work</p>
-                <p class="nav-link-text" class="no-select" style="animation: nav-load 600ms ease-in;">Resume</p>
-                <button id="hire-me-button" class="no-select">
-                    Hire Me!
-                </button>
+                <a href="#skills-card" style="animation-duration: 200ms;">Skills</a>
+                <a href="" style="animation-duration: 300ms;">Experience</a>
+                <a href="" style="animation-duration: 400ms;">Projects</a>
+                <a href="" style="animation-duration: 500ms;">Resume</a>
+                <button id="hire-me-button" style="animation-duration: 600ms;">Hire Me!</button>
             </div>
             <div id="floating-icon-links">
                 <a href="https://github.com/prime3333" target="_blank">
                     <img src="images/github-icon.svg" class="image-link">
                 </a>
-                <div class="line"></div>
-                <a href="https://www.linkedin.com/in/Tathagata-Sikdar" target="_blank">
+                <a href="https://www.linkedin.com/in/Tathagata-Sikdar" target="_blank" style="animation-duration: 300ms;">
                     <img src="images/linkedin-icon.svg" class="image-link">
                 </a>
             </div>
         </div>
         <div class="cards-container">
-            <div id="about-me">
-                <div id="introduction-text">
+            <div id="about-me-card">
+                <div id="introduction-text" class="card">
                     <p id="introduction-preamble">Hey there!</p>
-                    <p id="introduction-name">It's me, Tath.</p>
-                    <p id="introduction-major">I'm a Mechatronics Engineer</p>
-                    <p id="introduction-description">I love to work on websites to mechanics and anything in between. 
+                    <p class="title-text">It's me, Tath.</p>
+                    <p class="header-one">I'm a Mechatronics Engineer</p>
+                    <p class="normal-text" id="introduction-description">
+                        I love to work on websites to mechanics and anything in between. 
                         I have a passion for finding creative solutions to challenging 
                         problems and a strong commitment to providing quality results. 
                     </p>
@@ -46,12 +44,16 @@
                     <img src="images/portrait final.png" id="portrait">
                 </div>
             </div>
-            <div id="skills">
-                <div id="title">
-                    <p>Skills</p>
+            
+            <div id="skills-card">
+                <div class="title">
+                    <p class="title-text">Skills</p>
+                    <div class="title-underline"></div>
+                </div>
+                <div id="skills-body">
+                    <script src="scripts/skills-populate.js"></script>
                 </div>
             </div>
-            
         </div>
     </body>
 </html>

@@ -1,45 +1,32 @@
 @media (hover:hover) {
-    #about-me{
+    #about-me-card{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1em;
     }
 
     @media (max-width: 66em) {
-        #about-me{
+        #about-me-card{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            gap: 1em;
         }
     }
 
     #introduction-text{
-        background-color: #0a1930;
-        box-shadow: 0 3px 5px black;
         display: flex;
         flex-direction: column;
         padding: 4em;
-        margin: 2%;
         max-width: 35em;
         flex-shrink: 2.3;
-        border-radius: 1em;
     }
 
     #introduction-preamble{
         color: #bbbbbb;
         font-size: 13px;
-    }
-
-    #introduction-name{
-        font-weight: 600;
-        color: #b0cdf1;
-        font-size: 60px;
-    }
-
-    #introduction-major{
-        color: #bbbbbb;
-        font-size: 18px;
     }
 
     #introduction-description{
