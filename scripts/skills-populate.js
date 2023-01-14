@@ -1,18 +1,29 @@
 // Model       -------------------------------------
 const skillsList = [
     {
-        skillTitle: 'Languages',
-        skill: ['HTML','CSS','JavaScript', 'ARM assembly', 'C', 'C++', 'Python', 
-        'Java', 'MATLAB', 'LaTeX', 'Maple', 'Git']
+        skillTitle: 'Front End',
+        skill: ['HTML','CSS','JavaScript']
     },
     {
         skillTitle: 'Frameworks',
         skill: ['In Progress :)']
     },
     {
-        skillTitle: 'Software',
-        skill: ['Autodesk Fusion 360', 'Autodesk Inventor Pro', 'NI Multisim', 'Adobe Illustrator', 
-        'Adobe Photoshop', 'Adobe Premiere Pro', 'Microsoft Office Suite']
+        skillTitle: 'Embedded Systems',
+        skill: ['ARM assembly', 'C', 'C++']
+    },
+    {
+        skillTitle: 'CAD and Simulation',
+        skill: ['Fusion 360', 'Inventor Pro', 'NI Multisim']
+    },
+    {
+        skillTitle: 'Creative',
+        skill: ['Illustrator', 
+        'Photoshop', 'Premiere Pro', 'Microsoft Office Suite']
+    },
+    {
+        skillTitle: 'Some Other Languages!',
+        skill: ['Python', 'Java', 'MATLAB', 'LaTeX', 'Maple', ]
     }
 ];
 

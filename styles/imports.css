@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Montserrat:wght@500;600&display=swap');
 
 @import url(general.css);
-
-@import url(desktop/about_me.css);
-@import url(desktop/nav_bar.css);
-@import url(desktop/skills.css);
-
-@import url(mobile/about_me.css);
-@import url(mobile/nav_bar.css);
-@import url(mobile/skills.css);
+@import url(about_me.css);
+@import url(nav_bar.css);
+@import url(skills.css);

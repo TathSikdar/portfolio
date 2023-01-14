@@ -1,0 +1,55 @@
+#about-me-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+@media only screen and (max-width: 67em) {
+    #about-me-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+    }
+}
+
+#introduction-text{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    max-width: 35em;
+    flex-shrink: 2.3;
+}
+
+#introduction-preamble{
+    color: #bbbbbb;
+    font-size: 13px;
+}
+
+#introduction-description{
+    margin-top: 2em;
+}
+
+#introduction-picture{
+    margin: 0 2%;
+    flex-shrink: 1;
+}
+
+@media (max-width: 52em) {
+    #introduction-text{
+        padding: 4em 3.5em;
+    }
+}
+
+#portrait{
+    background-color: #0a1930;
+    height: auto;
+    width: 350px;
+    object-fit: contain;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #b0b0b0;
+    border-style: solid;
+}

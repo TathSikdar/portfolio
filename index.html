@@ -5,9 +5,11 @@
         <link rel="stylesheet" href="styles/imports.css">
         <link rel="shortcut icon" href="images/favicon.png">
         <title>Tathagata Sikdar - Portfolio</title>
+        <script defer src="scripts/skills-populate.js"></script>
     </head>
 
     <body>
+        <script src="scripts/nav-move-up.js"></script>
         <div id="nav-bar">
             <div id="left-nav">
                 <img src="images/favicon.png" id="nav-favicon">
@@ -19,15 +21,17 @@
                 <a href="" style="animation-duration: 500ms;">Resume</a>
                 <button id="hire-me-button" style="animation-duration: 600ms;">Hire Me!</button>
             </div>
-            <div id="floating-icon-links">
-                <a href="https://github.com/prime3333" target="_blank">
-                    <img src="images/github-icon.svg" class="image-link">
-                </a>
-                <a href="https://www.linkedin.com/in/Tathagata-Sikdar" target="_blank" style="animation-duration: 300ms;">
-                    <img src="images/linkedin-icon.svg" class="image-link">
-                </a>
-            </div>
         </div>
+        
+        <div id="floating-icon-links">
+            <a href="https://github.com/prime3333" target="_blank">
+                <img src="images/github-icon.svg" class="image-link">
+            </a>
+            <a href="https://www.linkedin.com/in/Tathagata-Sikdar" target="_blank" style="animation-duration: 300ms;">
+                <img src="images/linkedin-icon.svg" class="image-link">
+            </a>
+        </div>
+        
         <div class="cards-container">
             <div id="about-me-card">
                 <div id="introduction-text" class="card">
@@ -50,9 +54,15 @@
                     <p class="title-text">Skills</p>
                     <div class="title-underline"></div>
                 </div>
-                <div id="skills-body">
-                    <script src="scripts/skills-populate.js"></script>
+                <div id="skills-image-seperate">
+                    <div id="skills-body">
+                        <!-- Populated by skills-populate.js -->
+                    </div>
+                    <div id="skills-image-div">
+                        <img src="images/skills-image.svg" id="skills-image">
+                    </div>
                 </div>
+
             </div>
         </div>
     </body>
