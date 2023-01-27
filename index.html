@@ -19,10 +19,10 @@
                 <img src="images/favicon.png" id="nav-favicon">
             </div>
             <div id="right-nav">
+                <a href="#projects-card" style="animation-duration: 400ms;">Projects</a>
                 <a href="#skills-card" style="animation-duration: 200ms;">Skills</a>
                 <a href="#experience-card" style="animation-duration: 300ms;">Experience</a>
-                <a href="#projects-card" style="animation-duration: 400ms;">Projects</a>
-                <a href="resume-card" style="animation-duration: 500ms;">Resume</a>
+                <a href="#resume-card" style="animation-duration: 500ms;">Resume</a>
                 <button id="hire-me-button" style="animation-duration: 600ms;">Hire Me!</button>
             </div>
         </div>
@@ -58,7 +58,32 @@
                 </div>
             </div>
         <!---------------------------------CARD-------------------------------->
-            
+                    
+        <!---------------------------------CARD-------------------------------->
+        <div id="projects-card" class="section-card">
+            <div class="title">
+                <p class="title-text">Projects</p>
+                <div class="title-underline"></div>
+            </div>
+            <div id="projects-body">
+                <!-- populated by js -->
+            </div>
+        </div>
+                <!-- EXPANDED PROJECTS -->
+        <div id="expanded-project" class="card">
+            <div class="title">
+                <p class="title-text"></p>
+                <div class="title-underline"></div>
+                <button id="close-button">&times;</button>
+            </div>
+            <div id="expanded-project-body">
+            <!-- Populated by js -->
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <!-- EXPANDED PROJECTS -->
+        <!---------------------------------CARD-------------------------------->
+    
         <!---------------------------------CARD-------------------------------->
             <div id="skills-card" class="section-card">
                 <div class="title">
@@ -95,33 +120,18 @@
                         </div>
                     </div>
                 </div>
+                <div id="resume-card" class="card">
+                    <img id="resume" src="images/resume.png">
+                </div>
             </div>
         <!---------------------------------CARD-------------------------------->
-            <div id="projects-card" class="section-card">
-                <div class="title">
-                    <p class="title-text">Projects</p>
-                    <div class="title-underline"></div>
-                </div>
-                <div id="projects-body">
-                    <!-- populated by js -->
-                </div>
-            </div>
 
-        <!--------------------------------CARDS-------------------------------->
-        </div>
-                                        <!-- EXPANDED PROJECTS -->
-            <div id="expanded-project" class="card">
-                <div class="title">
-                    <p class="title-text"></p>
-                    <div class="title-underline"></div>
-                    <button id="close-button">&times;</button>
-                </div>
-                <div id="expanded-project-body">
-                    <!-- Populated by js -->
-                </div>
-            </div>
-            <div id="overlay"></div>
-                                <!-- EXPANDED PROJECTS -->
+        <!---------------------------------CARD-------------------------------->
+        <!-- <div id="resume-card" class="section-card">
+        </div> -->
+        <!---------------------------------CARD-------------------------------->
+    </div>
+    <!--------------------------------CARDS-------------------------------->
     </body>
 </html>
 

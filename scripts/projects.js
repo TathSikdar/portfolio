@@ -1,24 +1,25 @@
 // Model       -------------------------------------
 const projectsList = [
     {
-        projectName: 'Stand Tall',
-        projectOverview: 'OpenCV Posture Tracking Website',
-        projectPicture: 'stand-tall.png'
+        name: 'Stand Tall',
+        overview: 'OpenCV Posture Tracking Website',
+        picture: 'stand-tall.png'
+        
     },
     {
-        projectName: 'Farsword',
-        projectOverview: 'Parry based Pygame',
-        projectPicture: 'farsword.png'
+        name: 'Farsword',
+        overview: 'Parry based Pygame',
+        picture: 'farsword.png'
     },
     {
-        projectName: 'Sunny',
-        projectOverview: 'IOT Sunrise Alarm Clock',
-        projectPicture: 'sunny.png'
+        name: 'Sunny',
+        overview: 'IOT Sunrise Alarm Clock',
+        picture: 'sunny.png'
     },
     {
-        projectName: 'Illuminate',
-        projectOverview: 'Dynamic Brightness Control',
-        projectPicture: 'illuminate.png'
+        name: 'Illuminate',
+        overview: 'Dynamic Brightness Control',
+        picture: 'illuminate.png'
     }
 ]
 
@@ -37,9 +38,9 @@ function addProjectCard(project){
     const cardPictureDiv = document.createElement('div');
     const cardPicture = document.createElement('img');
 
-    cardTitleText.innerText = '</' + project.projectName + '>';
-    cardOverviewText.innerText = project.projectOverview;
-    cardPicture.src = 'images/' + project.projectPicture;
+    cardTitleText.innerText = '</' + project.name + '>';
+    cardOverviewText.innerText = project.overview;
+    cardPicture.src = 'images/' + project.picture;
 
     card.classList.add('card');
     card.classList.add('project');
@@ -61,7 +62,7 @@ function expandProject(project){
     const body = document.getElementById('expanded-project');
     const titleDiv = body.querySelectorAll('.title')[0];
     const title = titleDiv.querySelectorAll('.title-text')[0];
-    title.innerText = project.projectName;
+    title.innerText = project.name;
 }
 
 // View        -------------------------------------

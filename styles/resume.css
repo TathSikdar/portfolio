@@ -1,0 +1,19 @@
+#resume-card{
+    width: 60%;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(0, 
+    var(--background-color) 0%,
+    var(--card-color) 100%);
+}
+
+#resume{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
