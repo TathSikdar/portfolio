@@ -10,6 +10,7 @@
     background: linear-gradient(0, 
     var(--background-color) 0%,
     var(--card-color) 100%);
+    cursor: pointer;
 }
 
 #resume{

@@ -21,6 +21,10 @@
     transform: scale(105%);
 }
 
+.project:active{
+    transform: scale(95%);
+}
+
 .project-picture-div{
     max-width: 18em;
     display: flex;
@@ -38,13 +42,12 @@
 
 #expanded-project{
     position: fixed;
-    margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 3;
-
+    margin: 0;
     padding: 4em;
+    transform: translate(-50%, -50%);
     display: none;
 }
 
