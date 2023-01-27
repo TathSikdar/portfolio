@@ -14,16 +14,16 @@
     <body>
 
         <!-------------------------------NAV BAR------------------------------->
-        <div id="nav-bar">
+        <div id="nav-bar">  
             <div id="left-nav">
                 <img src="images/favicon.png" id="nav-favicon">
             </div>
             <div id="right-nav">
-                <a href="#projects-card" style="animation-duration: 400ms;">Projects</a>
-                <a href="#skills-card" style="animation-duration: 200ms;">Skills</a>
-                <a href="#experience-card" style="animation-duration: 300ms;">Experience</a>
+                <a href="#projects-card" style="animation-duration: 200ms;">Projects</a>
+                <a href="#skills-card" style="animation-duration: 300ms;">Skills</a>
+                <a href="#experience-card" style="animation-duration: 400ms;">Experience</a>
                 <a href="#resume-card" style="animation-duration: 500ms;">Resume</a>
-                <button id="hire-me-button" style="animation-duration: 600ms;">Hire Me!</button>
+                <a id="hire-me-nav" class="hire-me" href="mailto: rikisikdar1@gmail.com" style="animation-duration: 600ms;">Hire Me!</a>
             </div>
         </div>
         <!-------------------------------NAV BAR------------------------------->
@@ -120,15 +120,24 @@
                         </div>
                     </div>
                 </div>
-                <div id="resume-card" class="card">
+                <div id="resume-card" class="card section-card">
                     <img id="resume" src="images/resume.png">
                 </div>
             </div>
         <!---------------------------------CARD-------------------------------->
-
+        
         <!---------------------------------CARD-------------------------------->
-        <!-- <div id="resume-card" class="section-card">
-        </div> -->
+            <div id="hire-me-card" class="section-card">
+                <p class="hire-me-text title-text">If you've gotten this far,<br>
+                    let's talk...        	
+                </p>
+                <p class="hire-me-text title-text">
+                    <span id="down-arrow">
+                        &#8675;
+                    </span>     
+                </p>
+                <a id="hire-me-main" class="hire-me" href="mailto: rikisikdar1@gmail.com">Hire Me!</a>
+            </div>
         <!---------------------------------CARD-------------------------------->
     </div>
     <!--------------------------------CARDS-------------------------------->
