@@ -1,21 +1,40 @@
+:root{
+    --background-color: #081426;
+    --title-color: #b0cdf1;
+    --header-one-color: #bbbbbb;
+    --normal-text-color: #c0d0e2;
+    --underline-color: #ca6609;
+    --card-color: #0a1930;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    padding: 5em 4em;
+    padding: 7em 4em;
     margin-left: auto;
     margin-right: auto;
     max-width: 80em;
-    background-color: #081426;
-    height: 10000px;
-}   
+    background: var(--background-color);
+}
 
 p{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin: 0;
+    cursor: default;
+    user-select: none;
+}
+
+img{
+    user-select: none;
+}
+
+button{
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cards-container{
@@ -32,29 +51,56 @@ p{
 
 .title-text{
     font-weight: 600;
-    color: #b0cdf1;
+    color: var(--title-color);
     font-size: 60px;
 }
 
 .title-underline{
-    background-color: #ca6609;
+    background-color: var(--underline-color);
     height: 4px;
     width: 7em;
     border-radius: 4px;
 }
 
 .header-one{
-    color: #bbbbbb;
+    color: var(--header-one-color);
     font-size: 22px;
 }
 
 .normal-text{
-    color: #c0d0e2;
+    color: var(--normal-text-color);
     font-size: 13px;
 }
 
 .card{
-    background-color: #0a1930;
-    box-shadow: 0 3px 5px black;
+    background: linear-gradient(0, 
+    var(--background-color) 0%,
+    #081426 60%,
+    var(--card-color) 100%);
+    box-shadow: 0 2px 3px black;
     border-radius: 1em;
 }
+
+.small-card{
+    background: var(--card-color);
+    box-shadow: 0 2px 3px black;
+    border-radius: 1em;
+}
+
+.section-card{
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        scroll-margin-top: 6em;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

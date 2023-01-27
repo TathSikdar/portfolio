@@ -5,24 +5,30 @@
         <link rel="stylesheet" href="styles/imports.css">
         <link rel="shortcut icon" href="images/favicon.png">
         <title>Tathagata Sikdar - Portfolio</title>
-        <script defer src="scripts/skills-populate.js"></script>
+        <script defer src="scripts/nav-move-up.js"></script>
+        <script defer src="scripts/skills.js"></script>
+        <script defer src="scripts/experience.js"></script>
+        <script defer src="scripts/projects.js"></script>
     </head>
 
     <body>
-        <script src="scripts/nav-move-up.js"></script>
+
+        <!-------------------------------NAV BAR------------------------------->
         <div id="nav-bar">
             <div id="left-nav">
                 <img src="images/favicon.png" id="nav-favicon">
             </div>
             <div id="right-nav">
                 <a href="#skills-card" style="animation-duration: 200ms;">Skills</a>
-                <a href="" style="animation-duration: 300ms;">Experience</a>
-                <a href="" style="animation-duration: 400ms;">Projects</a>
-                <a href="" style="animation-duration: 500ms;">Resume</a>
+                <a href="#experience-card" style="animation-duration: 300ms;">Experience</a>
+                <a href="#projects-card" style="animation-duration: 400ms;">Projects</a>
+                <a href="resume-card" style="animation-duration: 500ms;">Resume</a>
                 <button id="hire-me-button" style="animation-duration: 600ms;">Hire Me!</button>
             </div>
         </div>
+        <!-------------------------------NAV BAR------------------------------->
         
+        <!---------------------------FLOATING LINKS---------------------------->
         <div id="floating-icon-links">
             <a href="https://github.com/prime3333" target="_blank">
                 <img src="images/github-icon.svg" class="image-link">
@@ -31,13 +37,16 @@
                 <img src="images/linkedin-icon.svg" class="image-link">
             </a>
         </div>
+        <!----------------------------FLOATING LINKS--------------------------->
         
+        <!--------------------------------CARDS-------------------------------->
         <div class="cards-container">
+        <!---------------------------------CARD-------------------------------->
             <div id="about-me-card">
                 <div id="introduction-text" class="card">
                     <p id="introduction-preamble">Hey there!</p>
-                    <p class="title-text">It's me, Tath.</p>
-                    <p class="header-one">I'm a Mechatronics Engineer</p>
+                    <p class="title-text" id="introduction-name">It's me, Tath.</p>
+                    <p class="header-one" id="introduction-major">I'm a Mechatronics Engineer</p>
                     <p class="normal-text" id="introduction-description">
                         I love to work on websites to mechanics and anything in between. 
                         I have a passion for finding creative solutions to challenging 
@@ -48,22 +57,66 @@
                     <img src="images/portrait final.png" id="portrait">
                 </div>
             </div>
+        <!---------------------------------CARD-------------------------------->
             
-            <div id="skills-card">
+        <!---------------------------------CARD-------------------------------->
+            <div id="skills-card" class="section-card">
                 <div class="title">
                     <p class="title-text">Skills</p>
                     <div class="title-underline"></div>
                 </div>
                 <div id="skills-image-seperate">
                     <div id="skills-body">
-                        <!-- Populated by skills-populate.js -->
+                        <!-- Populated by js -->
                     </div>
                     <div id="skills-image-div">
                         <img src="images/skills-image.svg" id="skills-image">
                     </div>
                 </div>
-
             </div>
+        <!---------------------------------CARD-------------------------------->
+
+        <!---------------------------------CARD-------------------------------->
+            <div id="experience-card" class="section-card">
+                <div class="title">
+                    <p class="title-text">Experience</p>
+                    <div class="title-underline"></div>
+                </div>
+                <div id="experience-body">
+                    <div id="experience-description-div" class="card">
+                        <!-- populated by js -->
+                    </div>
+                    <div id="experience-button-line">
+                        <div id="experience-line">
+                            <div id="experience-scroll-bar"></div>
+                        </div>
+                        <div id="experience-button-div">
+                            <!-- populated by js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!---------------------------------CARD-------------------------------->
+            <div id="projects-card" class="section-card">
+                <div class="title">
+                    <p class="title-text">Projects</p>
+                    <div class="title-underline"></div>
+                </div>
+                <div id="projects-body">
+                    <!-- populated by js -->
+                </div>
+            </div>
+            <div id="expanded-project" class="card">
+                <div class="title">
+                    <p class="title-text"></p>
+                    <div class="title-underline"></div>
+                    <button id="close-button">&times;</button>
+                </div>
+                <div id="expanded-project-body">
+                    <!-- Populated by js -->
+                </div>
+            </div>
+        <!--------------------------------CARDS-------------------------------->
         </div>
     </body>
 </html>

@@ -5,13 +5,13 @@
     gap: 1em;
 }
 
-@media only screen and (max-width: 67em) {
+@media (max-width: 67em){
     #about-me-card{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        gap: 1em;
+        gap: 5em;
     }
 }
 
@@ -24,27 +24,41 @@
 }
 
 #introduction-preamble{
-    color: #bbbbbb;
+    color: var(--header-one-color);
     font-size: 13px;
+    animation: 200ms ease-out slideInFromLeft;
+}
+
+#introduction-name{
+    animation: 300ms ease-out slideInFromLeft;
+}
+
+#introduction-major{
+    animation: 400ms ease-out slideInFromLeft;
 }
 
 #introduction-description{
     margin-top: 2em;
+    animation: 500ms ease-out slideInFromLeft;
 }
 
 #introduction-picture{
     margin: 0 2%;
     flex-shrink: 1;
+    animation: imageLoad 600ms ease-out;
 }
 
-@media (max-width: 52em) {
+/* @media (max-width: 52em) {
     #introduction-text{
         padding: 4em 3.5em;
     }
-}
+} */
 
 #portrait{
-    background-color: #0a1930;
+    background: linear-gradient(0, 
+    var(--background-color) 0%,
+    var(--background-color) 60%,
+    var(--card-color) 100%);
     height: auto;
     width: 350px;
     object-fit: contain;
@@ -52,4 +66,13 @@
     border-width: 2px;
     border-color: #b0b0b0;
     border-style: solid;
+}
+
+@keyframes imageLoad{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

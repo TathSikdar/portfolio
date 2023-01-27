@@ -1,0 +1,113 @@
+#experience-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    height: 24em;
+}
+
+@media (max-width: 50em ){
+    #experience-body{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start;
+        gap: 0;
+    }
+    #experience-button-line{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+#experience-button-line{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+#experience-line{
+    width: 3px;
+    background-color: #5b6085;
+    position: relative;
+    border-radius: 2px;
+}
+
+#experience-scroll-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    background-color: var(--normal-text-color);
+    border-radius: 2px;
+    transition-duration: 200ms;
+}
+
+
+#experience-button-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.experience-button{
+    background-color: transparent;
+    color: #c0d0e2;
+    text-align: left;
+    padding: 1.5em 1em;
+    border: none;
+    transition-duration: 200ms;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+.experience-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.experience-button:active{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#experience-description-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 2em;
+    padding: 3em;
+    width: 40em;
+    min-height: 10em;
+    
+    box-shadow: none; 
+}
+
+#experience-description-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    animation: 200ms ease-out slideInFromLeft;
+}
+
+#experience-description-date{
+    animation: 300ms ease-out slideInFromLeft;
+}
+
+#experience-description-date-text{
+    color: #5b6085;
+    font-size: 12px;
+}
+
+#experience-description-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    animation: 400ms ease-out slideInFromLeft;
+}
+
+#experience-entry{
+    display: flex;
+}
+
+
+.bullet-point{
+    padding-right: 1em;
+}
