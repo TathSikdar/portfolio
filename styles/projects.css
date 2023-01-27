@@ -13,6 +13,8 @@
     gap: 1em;
     background-color: var(--card-color);
     transition-duration: 200ms;
+    width: 17em;
+    height: 17em;
 }
 
 .project:hover{
@@ -25,10 +27,36 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    overflow:hidden;
 }
 
 .project-picture{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: contain;
+}
+
+#expanded-project{
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    padding: 4em;
+    display: none;
+}
+
+#overlay{
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.3);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
 }

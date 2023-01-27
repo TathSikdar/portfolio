@@ -6,7 +6,12 @@ const projectsList = [
         projectPicture: 'stand-tall.png'
     },
     {
-        projectName: 'Sunny!',
+        projectName: 'Farsword',
+        projectOverview: 'Parry based Pygame',
+        projectPicture: 'farsword.png'
+    },
+    {
+        projectName: 'Sunny',
         projectOverview: 'IOT Sunrise Alarm Clock',
         projectPicture: 'sunny.png'
     },
@@ -23,7 +28,7 @@ const projectsList = [
 
 function addProjectCard(project){
     const body = document.getElementById('projects-body');
-    
+
     const card = document.createElement('div');
     const cardTitle = document.createElement('div');
     const cardTitleText = document.createElement('p');
@@ -32,7 +37,7 @@ function addProjectCard(project){
     const cardPictureDiv = document.createElement('div');
     const cardPicture = document.createElement('img');
 
-    cardTitleText.innerText = project.projectName;
+    cardTitleText.innerText = '</' + project.projectName + '>';
     cardOverviewText.innerText = project.projectOverview;
     cardPicture.src = 'images/' + project.projectPicture;
 
@@ -52,6 +57,13 @@ function addProjectCard(project){
     cardPictureDiv.appendChild(cardPicture);
 }
 
+function expandProject(project){
+    const body = document.getElementById('expanded-project');
+    const titleDiv = body.querySelectorAll('.title')[0];
+    const title = titleDiv.querySelectorAll('.title-text')[0];
+    title.innerText = project.projectName;
+}
+
 // View        -------------------------------------
 
 // Controller  -------------------------------------
@@ -59,6 +71,8 @@ function populateProjects(){
     projectsList.forEach(function(project){
         addProjectCard(project);
     });
+
+    expandProject(projectsList[0]);
 }
 // Controller  -------------------------------------
 
