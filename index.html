@@ -9,7 +9,7 @@
         <script defer src="scripts/projects.js"></script>
         <script defer src="scripts/skills.js"></script>
         <script defer src="scripts/experience.js"></script>
-        <script defer src="scripts/resume.js"></script>
+        <script defer src="scripts/scroll-animation.js"></script>
     </head>
 
     <body>
@@ -61,7 +61,7 @@
         <!---------------------------------CARD-------------------------------->
                     
         <!---------------------------------CARD-------------------------------->
-        <div id="projects-card" class="section-card">
+        <div id="projects-card" class="section-card hidden">
             <div class="title">
                 <p class="title-text">Projects</p>
                 <div class="title-underline"></div>
@@ -70,15 +70,19 @@
                 <!-- populated by js -->
             </div>
         </div>
-                <!-- EXPANDED PROJECTS -->
-        <div id="expanded-project" class="card">
-            <div class="title">
-                <p class="title-text"></p>
-                <div class="title-underline"></div>
+        <!-- EXPANDED PROJECTS -->
+        <div id="expanded-project" class="card hidden">
+            <div id="expanded-project-title" class="title">
+                <p id="expanded-project-title-text" class="title-text"></p>
                 <button id="close-button">&times;</button>
             </div>
             <div id="expanded-project-body">
-            <!-- Populated by js -->
+                <div id="project-description">
+                    <!-- Populated by js -->
+                </div>
+                <iframe frameborder="0" id="embedded-project">
+                    <!-- Populated by js -->
+                </iframe>
             </div>
         </div>
         <div id="overlay"></div>
@@ -86,7 +90,7 @@
         <!---------------------------------CARD-------------------------------->
     
         <!---------------------------------CARD-------------------------------->
-            <div id="skills-card" class="section-card">
+            <div id="skills-card" class="section-card hidden">
                 <div class="title">
                     <p class="title-text">Skills</p>
                     <div class="title-underline"></div>
@@ -103,7 +107,7 @@
         <!---------------------------------CARD-------------------------------->
 
         <!---------------------------------CARD-------------------------------->
-            <div id="experience-card" class="section-card">
+            <div id="experience-card" class="section-card hidden">
                 <div class="title">
                     <p class="title-text">Experience</p>
                     <div class="title-underline"></div>
@@ -128,7 +132,7 @@
         <!---------------------------------CARD-------------------------------->
         
         <!---------------------------------CARD-------------------------------->
-            <div id="hire-me-card" class="section-card">
+            <div id="hire-me-card" class="section-card hidden">
                 <p class="hire-me-text title-text">If you've gotten this far,<br>
                     let's talk...        	
                 </p>

@@ -45,10 +45,33 @@
     top: 50%;
     left: 50%;
     z-index: 3;
+
     margin: 0;
-    padding: 4em;
+    padding: 3em;
+
     transform: translate(-50%, -50%);
     display: none;
+    flex-direction: column;
+    column-gap: 2em;
+    align-items: center;
+
+    transition-duration: 0.5s;
+}
+
+#expanded-project-body{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    border: none;
+}
+
+#project-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #overlay{
@@ -62,4 +85,20 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     display: none;
+}
+
+#close-button{
+    position: absolute;
+    font-size: 50px;
+    border: none;
+    background-color: transparent;
+    color: var(--header-one-color);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0.3em;
+}
+
+#close-button:hover{
+    color: var(--underline-color);
 }

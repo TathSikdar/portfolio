@@ -58,7 +58,7 @@ button{
 .title-underline{
     background-color: var(--underline-color);
     height: 4px;
-    width:10%;
+    width:8em;
     border-radius: 4px;
 }
 
@@ -110,9 +110,6 @@ button{
     padding: 0.5em 1em 0.5em 1em;
     margin-left: 2em;
 }
-.hire-me:focus{
-    box-shadow: #D6D6E7 0 0 0 0.15em inset, rgba(45, 35, 66, 0.4) 0 0.2em 0.4em, rgba(45, 35, 66, 0.3) 0 0.7em 1.3em -0.3em, #D6D6E7 0 -0.3em 0 inset;
-}
 .hire-me:hover{
     box-shadow: rgba(45, 35, 66, 0.4) 0 0.4em 0.8em, rgba(45, 35, 66, 0.3) 0 0.7em 1.3em -0.3em, #D6D6E7 0 -0.3em 0 inset;
     transform: translateY(-10%);
@@ -123,6 +120,23 @@ button{
 .hire-me:active{
     box-shadow: #66666f 0 0.3em 0.7em inset;
     transform: translateY(2px);
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
 }
 
 @keyframes slideInFromLeft {
