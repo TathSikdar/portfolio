@@ -4,8 +4,10 @@ const projectsList = [
         name: 'Stand Tall',
         overview: 'OpenCV Posture Tracking Website',
         picture: 'stand-tall.png',
-        embed: '',
-        description: ''
+        embed: 'none',
+        description:     '<p class="header-one">\
+                              Coming Soon\
+                         <p class="normal-text">'
         // description: 'Stand Tall is a posture analysis website that provides real-time tracking and personalized feedback to users. While it is still a work in progress, the website has been built using Flask and OpenCV to provide basic posture tracking functionality. The backend of the website is built using Flask, a lightweight Python web framework, and OpenCV, an open-source computer vision library. The front-end of the website is designed using HTML, CSS, and JavaScript, providing users with a basic interface.',
     },
     {
@@ -27,23 +29,29 @@ const projectsList = [
         name: 'Sunny',
         overview: 'IOT Sunrise Alarm Clock',
         picture: 'sunny.png',
-        embed: '',
-        description: 'sunny.html'
+        embed: 'none',
+        description:    '<p class="header-one">\
+                             Coming Soon\
+                         <p class="normal-text">'
     },
     {
         name: 'Illuminate',
         overview: 'Dynamic Brightness Control',
         picture: 'illuminate.png',
         description: 'Coming Soon',
-        embed: '',
-        description: 'illuminate.html'
+        embed: 'none',
+        description: '<p class="header-one">\
+        Coming Soon\
+    <p class="normal-text">'
     },
     {
         name: 'Yonder',
         overview: 'All Terrain Drone',
         picture: 'yonder.png',
-        embed: '',
-        description: 'yonder.html'
+        embed: 'none',
+        description:    '<p class="header-one">\
+                            Coming Soon\
+                        <p class="normal-text">'
     }
 ]
 
