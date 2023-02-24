@@ -63,7 +63,7 @@
         <!---------------------------------CARD-------------------------------->
         <div id="projects-card" class="section-card hidden">
             <div class="title">
-                <p class="title-text">Projects</p>
+                <p class="title-text" style="text-align: center;">Projects</p>
                 <div class="title-underline"></div>
             </div>
             <div id="projects-body">
@@ -77,12 +77,17 @@
                 <button id="close-button">&times;</button>
             </div>
             <div id="expanded-project-body">
-                <div id="project-description">
+                <div id="project-description-top">
                     <!-- Populated by js -->
                 </div>
-                <iframe frameborder="0" id="embedded-project">
+                <div>
+                    <iframe id="embedded-project">
+                        <!-- Populated by js -->
+                    </iframe>
+                </div>
+                <div id="project-description-bottom">
                     <!-- Populated by js -->
-                </iframe>
+                </div>
             </div>
         </div>
         <div id="overlay"></div>
@@ -125,9 +130,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="resume-card" class="card section-card">
-                    <img id="resume" src="images/resume.png" onclick="window.open('images/Resume.pdf','_blank');">
-                </div>
+            </div>
+        <!---------------------------------CARD-------------------------------->
+
+        <!---------------------------------CARD-------------------------------->
+            <div id="resume-card" class="card section-card hidden">
+                <img id="resume" src="images/resume.png" onclick="window.open('images/Resume.pdf','_blank');">
             </div>
         <!---------------------------------CARD-------------------------------->
         

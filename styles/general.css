@@ -94,6 +94,10 @@ button{
         scroll-margin-top: 6em;
 }
 
+.bullet-point{
+    padding-right: 1em;
+}
+
 .hire-me{
     background-color: #FCFCFD;
     color: #36395A;
@@ -149,3 +153,8 @@ button{
       opacity: 1;
     }
   }
+
+  
+.bullet-point{
+    padding-right: 1em;
+}

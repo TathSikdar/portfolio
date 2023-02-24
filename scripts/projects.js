@@ -5,9 +5,8 @@ const projectsList = [
         overview: 'OpenCV Posture Tracking Website',
         picture: 'stand-tall.png',
         embed: 'none',
-        description:     '<p class="header-one">\
-                              Coming Soon\
-                         <p class="normal-text">'
+        descriptionTop: [],
+        descriptionBottom: ['Coming Soon'] 
         // description: 'Stand Tall is a posture analysis website that provides real-time tracking and personalized feedback to users. While it is still a work in progress, the website has been built using Flask and OpenCV to provide basic posture tracking functionality. The backend of the website is built using Flask, a lightweight Python web framework, and OpenCV, an open-source computer vision library. The front-end of the website is designed using HTML, CSS, and JavaScript, providing users with a basic interface.',
     },
     {
@@ -15,13 +14,9 @@ const projectsList = [
         overview: 'Parry based Pygame',
         picture: 'farsword.png',
         embed: 'farsword-game.html',
-        description: '\
-        <p class="header-one">\
-            Farsword is parry based combat side scroller with inspiration from souls-like games. Sprite art was created using League of Legend 3D models, Pixelator engine, and a LOT of fixing in photoshop. The music comes from Nier: Automata and sound effects from Sekiro and League of Legends.\
-        <p class="normal-text">\
-            Gameplay instructions:<br> 1. If a red danger sign apears, the attack is UNBLOCKABLE and must be DODGED<br>2. All other attacks can be deflected by RIGHT CLICKING<br>\
-        </p>\
-        '
+        descriptionTop: [],
+        descriptionBottom: ['If a red danger sign apears, the attack is UNBLOCKABLE and must be DODGED',
+                            'All other attacks can be deflected by RIGHT CLICKING']
         // description: 'Farsword is parry based combat side scroller with inspiration from souls-like games. Sprite art was created using League of Legend 3D models, Pixelator engine, and a LOT of fixing in photoshop. The music comes from Nier: Automata and sound effects from Sekiro and League of Legends.',
         // extraText: "Gameplay instructions:<br> 1. If a red danger sign apears, the attack is UNBLOCKABLE and must be DODGED<br>2. All other attacks can be deflected by RIGHT CLICKING<br>"
     },
@@ -30,28 +25,24 @@ const projectsList = [
         overview: 'IOT Sunrise Alarm Clock',
         picture: 'sunny.png',
         embed: 'none',
-        description:    '<p class="header-one">\
-                             Coming Soon\
-                         <p class="normal-text">'
+        descriptionTop: [],
+        descriptionBottom: ['Coming Soon']
     },
     {
         name: 'Illuminate',
         overview: 'Dynamic Brightness Control',
         picture: 'illuminate.png',
-        description: 'Coming Soon',
         embed: 'none',
-        description: '<p class="header-one">\
-        Coming Soon\
-    <p class="normal-text">'
+        descriptionTop: [],
+        descriptionBottom: ['Coming Soon']
     },
     {
         name: 'Yonder',
         overview: 'All Terrain Drone',
         picture: 'yonder.png',
         embed: 'none',
-        description:    '<p class="header-one">\
-                            Coming Soon\
-                        <p class="normal-text">'
+        descriptionTop: [],
+        descriptionBottom: ['Coming Soon']
     }
 ]
 
@@ -92,7 +83,7 @@ function addProjectCard(project){
 
 function expandProject(project){
     const body = document.getElementById('expanded-project');
-    const description = document.getElementById('project-description');
+    const descriptionTop = document.getElementById('project-description-top');
     const projectFrame = document.getElementById('embedded-project');
     const overlay = document.getElementById('overlay');
     const titleDiv = body.querySelectorAll('.title')[0];
@@ -100,15 +91,22 @@ function expandProject(project){
 
     title.innerText = '</' + project.name + '>';
 
-    description.innerHTML = project.description;
-    projectFrame.src = 'projects/' + project.embed;
+    fillBottomDescription(project);
     
-
-    if (project.name = "Farsword") {
+    // project specifics
+    if (project.name == 'Farsword') {
+        projectFrame.src = 'projects/' + project.embed;
         projectFrame.style.aspectRatio = 16/9;
         projectFrame.style.width = "70vw";
+        projectFrame.style.height = "auto";
+        projectFrame.style.maxWidth = "720px";
+    }
+    else {
+        projectFrame.style.height = 0;
+        projectFrame.style.width = 0;
     }
 
+    // display popup and darken background
     body.style.display = 'flex';
     overlay.style.display = 'flex';
 }
@@ -116,10 +114,39 @@ function expandProject(project){
 function closeProject() {
     const body = document.getElementById('expanded-project');
     const projectFrame = document.getElementById('embedded-project');
+    const descriptionTop = document.getElementById('project-description-top');
+    const descriptionBottom = document.getElementById('project-description-bottom');
     const overlay = document.getElementById('overlay');
+
     projectFrame.src = "";
+    descriptionTop.innerHTML = "";
+    descriptionBottom.innerHTML = "";
     body.style.display = 'none';
     overlay.style.display = 'none';
+}
+
+function fillBottomDescription(project) {
+
+    const descriptionBottom = document.getElementById('project-description-bottom');
+    
+    project.descriptionBottom.forEach((entryText) => {
+        const entry = document.createElement('div');
+        const entryTextP = document.createElement('p')
+        const bulletPoint = document.createElement('p');
+        
+        entryTextP.classList.add('normal-text');
+        bulletPoint.classList.add('normal-text');
+        bulletPoint.classList.add('bullet-point');
+        entryTextP.classList.add('project-entry-text');
+        entry.classList.add('project-entry');
+
+        entryTextP.innerText = entryText;
+        bulletPoint.innerText = '\u2862';
+
+        entry.appendChild(bulletPoint);
+        entry.appendChild(entryTextP);
+        descriptionBottom.appendChild(entry);
+    });
 }
 
 // View        -------------------------------------

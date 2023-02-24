@@ -103,7 +103,7 @@
     animation: 400ms ease-out slideInFromLeft;
 }
 
-#experience-entry{
+.experience-entry{
     display: flex;
 }
 

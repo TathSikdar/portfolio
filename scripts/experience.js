@@ -8,7 +8,7 @@ const experiences = [
         'Collaborated with colleagues in developing benchmark lessons and identifying curriculum needs of faculty',
         'Established training documentation and tools to address needs of specific age groups'],
         startDate: 'Sept 2022',
-        endDate: 'Jan 2022'
+        endDate: 'Jan 2023'
     },
     {
         employer: 'Inspirely Education',
@@ -16,7 +16,7 @@ const experiences = [
         description: ['Taught engaging online classes using project-based learning',
         'Communicated regularly with parents to discuss student\'s progress and challenges'],
         startDate: 'Sept 2022',
-        endDate: 'Jan 2022'
+        endDate: 'Jan 2023'
     },
     {
         employer: 'NextGen Learning',
@@ -87,8 +87,8 @@ function renderDescription(descriptionDiv, experience){
         entryTextP.classList.add('normal-text');
         bulletPoint.classList.add('normal-text');
         bulletPoint.classList.add('bullet-point');
-        entryTextP.id = 'experience-entry-text';
-        entry.id = 'experience-entry';
+        entryTextP.classList.add('experience-entry-text');
+        entry.classList.add('experience-entry');
 
         entryTextP.innerText = entryText;
         bulletPoint.innerText = '\u2862';
